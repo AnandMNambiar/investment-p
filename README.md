@@ -8,7 +8,8 @@ See [market_sim](market_sim/README.md) for more details on the market simulation
 
 1. Read this readme and all the docs.
 2. Create a fork of this repo with your contribution.
-3. Contact.
+3. Check other branches (blockchain_integration_test_v0.1).
+4. Contact.
 
 ## Contact
 
