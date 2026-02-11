@@ -4,7 +4,7 @@ Code related to the investment section of the website.
 
 See [market_sim](market_sim/README.md) for more details on the market simulation framework
 
-## Instructions
+## Instructions (test)
 
 1. Read this readme and all the docs.
 2. Create a fork of this repo with your contribution.
