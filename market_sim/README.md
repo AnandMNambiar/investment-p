@@ -113,3 +113,42 @@ pytest tests/integration/test_market_making.py
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+
+## Distributed Consensus Extension
+
+### Concept Chosen
+
+Inspired by the distributed consensus principles described in *Foundations of Distributed Consensus and Blockchains*, I implemented a simplified majority-based agreement mechanism within the market simulation engine.
+
+Distributed consensus ensures that multiple nodes in a distributed system agree on a value even if some nodes may behave incorrectly or maliciously.
+
+### Implementation
+
+A new module `market_sim/consensus` was introduced:
+
+- `ConsensusNode`: Simulates an independent validator node.
+- `MajorityConsensus`: Implements a majority voting mechanism.
+
+Before committing a trade in the matching engine:
+
+1. A trade is created.
+2. The trade is validated by multiple simulated nodes.
+3. Each node independently verifies:
+   - Quantity > 0
+   - Price > 0
+   - Buyer and seller are different
+4. The trade is accepted only if a majority of nodes approve it.
+
+This models a simplified quorum-based consensus mechanism integrated directly into the trade creation flow.
+
+### Design Rationale
+
+The consensus layer was introduced at the trade creation boundary (`_create_trade`) to ensure validation occurs before state mutation. This preserves modularity and clean separation of concerns while demonstrating distributed agreement principles.
+
+### Future Improvements
+
+- Introduce Byzantine (malicious) nodes.
+- Simulate network latency between validators.
+- Implement leader-based consensus (e.g., Raft-style protocol).
+- Extend toward blockchain-style trade logging.
