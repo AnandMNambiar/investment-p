@@ -7,6 +7,7 @@ from decimal import Decimal
 from datetime import datetime
 from core.models.base import Order, Trade, OrderBook, OrderSide, OrderStatus, OrderType
 from core.utils.time_utils import utc_now
+from market_sim.consensus.majority_consensus import MajorityConsensus
 
 class MatchingEngine:
     def __init__(self, symbol: str):
