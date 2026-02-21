@@ -13,6 +13,7 @@ class MatchingEngine:
     def __init__(self, symbol: str):
         self.order_book = OrderBook.create(symbol)
         self.trades: List[Trade] = []
+        self.consensus = MajorityConsensus()
         
     def process_order(self, order: Order) -> List[Trade]:
         """Process an incoming order and generate trades."""
