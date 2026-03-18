@@ -1,48 +1,51 @@
-# Investment
+Investment Market Simulation
 
-Code related to the investment section of the website.
+This repository contains a project I developed for the investment section of a financial market simulation platform. The objective of this project is to simulate market behavior, experiment with trading strategies, and explore how different financial system components interact within a simulated environment.
 
-See [market_sim](market_sim/README.md) for more details on the market simulation framework
+Project Overview
 
-## Instructions (test)
+This project implements a basic framework for simulating financial markets and trading activities. It allows experimentation with market dynamics and provides an environment to study investment strategies and financial data processing.
 
-1. Read this readme and all the docs.
-2. Create a fork of this repo with your contribution.
-3. Check other branches (blockchain_integration_test_v0.1).
-4. Contact.
+As part of the development, I also explored possible blockchain integration concepts for financial systems.
 
-## Contact
+Project Structure
 
-juan.diez@torbellino.tech
+Investment Module
+Contains code related to investment logic and trading simulation.
 
-## Further docs
+Market Simulation
+Implements the framework used to simulate market behavior and trading activities.
 
-test: https://drive.google.com/file/d/19vKu5HmRJWuzrDGBsTaEiHyJlznYUZKO/view?usp=drive_link
-book: https://drive.google.com/file/d/1l9_uCBWikmX-XX5E15n3T65Nkh_cNnEW/view?usp=drive_link
+Database Operations
+Includes scripts used to test and manage database interactions.
 
-## Usage
+For more details about the simulation framework, refer to the market_sim module.
 
-```
+Usage
+
+Run the database test script:
+
 python3 test_db_operations.py
-```
+Documentation
 
-## Market Dynamics and Trading Simulation
+Test Documentation
+https://drive.google.com/file/d/19vKu5HmRJWuzrDGBsTaEiHyJlznYUZKO/view
 
-Implements a framework for simulating, analyzing, and learning about financial markets, trading strategies, and blockchain integration.
+Project Book / Detailed Documentation
+https://drive.google.com/file/d/1l9_uCBWikmX-XX5E15n3T65Nkh_cNnEW/view
 
-Currently v0.
+Development Notes
 
-## License
+Project currently in Version 0
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Some experimental work related to blockchain integration is included
 
-The MIT License was chosen to:
-- Encourage wide adoption and collaboration
-- Allow commercial and academic use
-- Keep compliance simple
-- Protect contributors from liability
-- Maintain compatibility with most open-source projects
+Additional testing branches can be explored such as blockchain_integration_test_v0.1
 
-## Notes
+License
+
+This project is licensed under the MIT License, allowing open collaboration, academic and commercial use while maintaining simple compliance.
+
+Notes
 
 Project log reinitialized on 2025-01-19.
